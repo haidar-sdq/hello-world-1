@@ -27,7 +27,7 @@ jobs:
         mvn -B package --file pom.xml
         mkdir artifacts && cp /home/runner/work/hello-world-1/hello-world-1/webapp/target/*.war artifacts
         cd artifacts
-    - name: save artifact
+    - name: save the artifact
       uses: actions/upload-artifact@v2
       with:
         name: github-actions-artifact
